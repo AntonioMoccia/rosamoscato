@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import './locomotive-scroll.scss';
+
+@import './components/Layout.scss';
+@import './components/navigation.scss';
+
+@import './pages/home.scss';
+@import './pages/about.scss';
+@import './pages/servizi.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+main{
+    background-color: rgb(210,210,206);
+}
+.section{
+    height: 100vh;
+    width: 100vw;
+}

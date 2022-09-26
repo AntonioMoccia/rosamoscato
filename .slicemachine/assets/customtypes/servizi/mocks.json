@@ -1,0 +1,57 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "servizi",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "servizio": [
+      {
+        "titolo": "away",
+        "descrizione": [
+          {
+            "type": "paragraph",
+            "text": "Pariatur veniam labore consequat quis ut officia do do et minim reprehenderit velit pariatur do. Labore nisi esse labore commodo ad ad ea anim ullamco deserunt pariatur.",
+            "spans": []
+          }
+        ],
+        "immagine": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9"
+        }
+      }
+    ],
+    "descrizione_servizi": [
+      {
+        "type": "paragraph",
+        "text": "Adipisicing ullamco cupidatat deserunt velit proident sit non incididunt.",
+        "spans": []
+      }
+    ],
+    "gallery_servizi": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
+        }
+      }
+    ],
+    "slices": []
+  }
+}

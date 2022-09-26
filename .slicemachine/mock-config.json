@@ -1,0 +1,24 @@
+{
+  "_cts": {
+    "home": {},
+    "about": {
+      "testo": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "servizi": {
+      "descrizione_servizi": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "slices": {
+    "Gallery": {}
+  }
+}

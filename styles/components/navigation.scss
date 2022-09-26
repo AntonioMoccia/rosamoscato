@@ -1,0 +1,33 @@
+.navigation-wrapper{
+    background-color: rgb(210,210,206);
+
+    .logo-wrapper{
+        width: 100vw;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            cursor: pointer;
+        }
+    }
+    .navigation-container{
+        
+        .navigation-list{
+            display: flex;
+            justify-content: center;
+            .navigation-item{
+                text-transform: uppercase;
+                list-style: none;
+                color: black;
+                padding: 2% 3%;
+                font-weight: 100;
+                letter-spacing: 0.2rem;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

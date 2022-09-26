@@ -1,0 +1,19 @@
+{
+  "id": "home",
+  "label": "home",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "video": {
+        "type": "Link",
+        "config": {
+          "label": "video",
+          "placeholder": "",
+          "select": null
+        }
+      }
+    },
+    "SEO": {}
+  }
+}

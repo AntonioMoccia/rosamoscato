@@ -1,0 +1,27 @@
+{
+  "id": "about",
+  "label": "about",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "testo": {
+        "type": "StructuredText",
+        "config": {
+          "label": "testo",
+          "placeholder": "",
+          "allowTargetBlank": false,
+          "multi": "paragraph,strong,em,hyperlink"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.home-wrapper{
+    padding: 2.5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    //media aumentare il padding top
+    .video-wrapper{ 
+        height: 100%;
+        width: 100vw ;
+        display: flex;
+        justify-content: center;
+        #video-hero-id{ 
+            width: 90vw;
+        }
+    }
+}

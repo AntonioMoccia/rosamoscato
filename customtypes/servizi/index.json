@@ -1,0 +1,75 @@
+{
+  "id": "servizi",
+  "label": "servizi",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "servizio": {
+        "type": "Group",
+        "config": {
+          "label": "servizio",
+          "fields": {
+            "titolo": {
+              "type": "Text",
+              "config": {
+                "label": "titolo",
+                "placeholder": ""
+              }
+            },
+            "descrizione": {
+              "type": "StructuredText",
+              "config": {
+                "label": "descrizione",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "immagine": {
+              "type": "Image",
+              "config": {
+                "label": "immagine",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      },
+      "descrizione_servizi": {
+        "type": "StructuredText",
+        "config": {
+          "label": "descrizione_servizi",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "gallery_servizi": {
+        "type": "Group",
+        "config": {
+          "label": "gallery",
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "SEO": {}
+  }
+}
