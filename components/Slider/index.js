@@ -19,10 +19,13 @@ export default ({ images }) => {
       onSwiper={(swiper) => console.log(swiper)} */
       data-scroll
     >
-      {images.map((img) => {
+      {images.map((img,index) => {
         return (
-          <SwiperSlide>
+          <SwiperSlide
+          key={index}
+          >
             <img
+
               src={img.image.url}
               style={{
                 width: "80vw",
