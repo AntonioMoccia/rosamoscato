@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     padding: 5% 0;
+    text-align: left;
+    flex-direction: column;
     @media screen and (max-width:1023px) {
-        flex-direction: column;
     }
     .about-wrapper-image{
         display: flex;
@@ -17,11 +18,10 @@
         }
     }
     .about-wrapper-description{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
         padding: 0 5%;
-        font-size: 1.2rem;
+        font-weight: 600;
+        font-size: 1.5rem;
         @media screen and (max-width:1023px) {
             padding: 0% 8%;
         }

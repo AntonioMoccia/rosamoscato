@@ -6,20 +6,20 @@ function Navigation() {
   return (
     <div className="navigation-wrapper" data-scroll-section>
       <div className="logo-wrapper" data-scroll >
-        <Link href="/">
-        <img src={'/logo.png'} className="logo" />
+        <Link href="/" data-scroll>
+        <img src={'/logo.png'} className="logo" data-scroll/>
         </Link>
       </div>
       <div className="navigation-container" data-scroll>
-        <ul className="navigation-list" data-scroll >
-        <NavLink href='/'>
+        <ul className="navigation-list" data-scroll>
+          <NavLink href='/' data-scroll>
                   Home
             </NavLink>
-            <NavLink href='/chi-sono'>
+            <NavLink href='/chi-sono' data-scroll>
                   Chi sono
             </NavLink>
 
-            <NavLink href="/servizi">
+            <NavLink href="/servizi" data-scroll>
                         Servizi
             </NavLink>
           <NavLink href="/contatti">

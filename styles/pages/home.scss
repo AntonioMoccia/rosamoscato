@@ -5,11 +5,17 @@
     align-items: center;
     flex-direction: column;
     //media aumentare il padding top
+    @media screen and (max-width:1023px) {
+        height: 80vh;
+    }
     .video-wrapper{ 
         height: 100%;
         width: 100vw ;
         display: flex;
         justify-content: center;
+        @media screen and (max-width:1023px) {
+            height: auto;
+        }
         #video-hero-id{ 
             width: 90vw;
         }
