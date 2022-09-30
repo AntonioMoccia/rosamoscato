@@ -14,8 +14,8 @@ function Layout({ children }) {
           lerp: 0.07,
           multiplier: 1,
           reloadOnContextChange: true,
-          tablet: { smooth: true, lerp: 0.07 },
-          smartphone: { smooth: true, lerp: 0.07 },
+          tablet: { smooth: true, lerp: 1 , multiplier: 2,},
+          smartphone: { smooth: true, lerp: 0.07, multiplier: 2, },
         }}
         watch={["router.asPath"]}
         location={asPath}
