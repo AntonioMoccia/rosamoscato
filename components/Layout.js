@@ -13,7 +13,7 @@ function Layout({ children }) {
           smooth: true,
           lerp: 0.07,
           multiplier: 1,
-          touchMultiplier:3,
+          touchMultiplier:4,
           reloadOnContextChange: true,
           tablet: { smooth: true },
           smartphone: { smooth: true },

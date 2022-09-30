@@ -3,10 +3,12 @@
 
 @import './components/Layout.scss';
 @import './components/navigation.scss';
+@import './components/swiper.scss';
 
 @import './pages/home.scss';
 @import './pages/about.scss';
 @import './pages/servizi.scss';
+@import './pages/contatti.scss';
 
 *{
     padding: 0;

@@ -1,0 +1,19 @@
+.swiper{
+    width: 60vw;
+    @media screen and (max-width:1023px) {
+        width: 80vw;
+    }
+    .swiper-slide{
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: auto;
+            max-width: 60vw;
+            max-height: 70vh;
+
+        }
+    }
+}

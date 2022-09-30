@@ -8,9 +8,8 @@ import "swiper/css/navigation";
 export default ({ images }) => {
   return (
     <Swiper
-      style={{
-        width: "80vw",
-      }}
+      className='swiper'
+
       modules={[Navigation]}
       navigation
       spaceBetween={5}
@@ -23,15 +22,9 @@ export default ({ images }) => {
         return (
           <SwiperSlide
           key={index}
+          className='swiper-slide'
           >
-            <img
-
-              src={img.image.url}
-              style={{
-                width: "80vw",
-                maxHeight: "70vh",
-              }}
-            />
+            <img src={img.image.url}/>
           </SwiperSlide>
         );
       })}
