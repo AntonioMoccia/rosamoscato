@@ -13,7 +13,6 @@ function Layout({ children }) {
           smooth: true,
           lerp: 0.07,
           multiplier: 1,
-          scrollFromAnywhere: true,
           reloadOnContextChange: true,
           tablet: { smooth: true, lerp: 0.07 },
           smartphone: { smooth: true, lerp: 0.07 },
