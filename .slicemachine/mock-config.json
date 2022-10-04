@@ -12,7 +12,7 @@
     "servizi": {
       "descrizione_servizi": {
         "config": {
-          "patternType": "PARAGRAPH",
+          "patternType": "STORY",
           "blocks": 1
         }
       }

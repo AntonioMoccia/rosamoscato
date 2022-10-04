@@ -8,12 +8,12 @@ function Contatti() {
                     <AiOutlinePhone />
                     3314487994
                     </div>
-                <div className='email'>
-                    <AiOutlineMail />
-                    moccia.ant@gmail.com</div>
                 <div className='address'>
                     <AiOutlinePushpin />
                     Via Luca Signorelli,2 Grottaminarda, AV</div>
+                <div className='email'>
+                    <AiOutlineMail />
+                    moccia.ant@gmail.com</div>
             </div>
         </div>
     )
