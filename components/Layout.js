@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import Navigation from "./Navigation";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useRouter } from "next/router";
+import Footer from "./Footer";
 
 function Layout({ children }) {
   const containerRef = useRef(null);
@@ -37,6 +38,7 @@ function Layout({ children }) {
         <main ref={containerRef} className="container" data-scroll-container>
           <Navigation />
           {children}
+          <Footer />
         </main>
       </LocomotiveScrollProvider>
     </>

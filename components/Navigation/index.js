@@ -35,10 +35,12 @@ function Navigation() {
           x: 0,
         }).to(".navigation-item > a", {
           y: 0,
+          stagger:0.09
         });
       } else {
         tl.to(".navigation-item > a", {
           y: "120%",
+          stagger:0.09
         }).to(".navigation-list", {
           x: "-100%",
         }).to(".burger-wrapper",{
@@ -52,7 +54,9 @@ function Navigation() {
   }, [open]);
   return (
     <div className="navigation-wrapper"  >
-      <div className="logo-wrapper">
+      <div className="logo-wrapper" onClick={()=>{
+        setOpen(false)
+      }}>
         <Link href="/">
           <img src={"/logo.png"} className="logo" />
         </Link>
