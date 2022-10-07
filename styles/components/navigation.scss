@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-  @media screen and (max-width: 700px) {
+  min-height: 100px;
+  @media screen and (max-width: 620px) {
     flex-direction: row;
     align-items: center;
     height: 15vh;
@@ -18,16 +18,16 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 620px) {
         position: absolute;
-        left: 5%;
+        left: 0%;
         width: 50vw;
-        margin-top: 5%;
+        margin-top: 0%;
         z-index: 2;
     }
     img {
         cursor: pointer;
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 620px) {
         height: auto;
         width: 100%;
         position: relative;
@@ -37,7 +37,7 @@
   }
   .navigation-container{
 
-    @media screen and (max-width:700px)  {
+    @media screen and (max-width:620px)  {
             z-index: -1;
     }
   .navigation-list {
@@ -50,7 +50,7 @@
       padding: 2% 3%;
       font-weight: 100;
       letter-spacing: 0.2rem;
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 620px) {
         margin: 3% 1%; 
         font-size: 1.5rem;
         overflow: hidden;
@@ -63,7 +63,7 @@
         display: inline-block;
       }
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 620px) {
       transform: translateX(-100%);
       height: 100vh;
       width: 100vw;
@@ -81,7 +81,7 @@
 }
   .burger-wrapper {
     display: none;
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 620px) {
       display: inline;
       position: absolute;
       right: 5%;

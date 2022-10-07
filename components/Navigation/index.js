@@ -15,14 +15,20 @@ function Navigation() {
           setOpen(false)
         })
       })
-      if(window.innerWidth<=700){
-        document.querySelector('.navigation-wrapper').removeAttribute('data-scroll-section')
-      }else{
-
-        document.querySelector('.navigation-wrapper').setAttribute('data-scroll-section',true)
-      }
     },[])
-
+    
+    useEffect(()=>{
+      if(typeof window == 'undefined') return
+    
+      window.addEventListener('resize',()=>{
+        if(window.innerWidth<=700){
+          document.querySelector('.navigation-wrapper').removeAttribute('data-scroll-section')
+        }else{
+          document.querySelector('.navigation-wrapper').setAttribute('data-scroll-section',true)
+          setOpen(true)
+        }
+      })
+    })
   useEffect(() => {
     if(!isReady) return
     if (window.innerWidth <= 700) {
