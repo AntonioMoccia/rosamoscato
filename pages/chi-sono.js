@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React,{useEffect} from "react";
 import {client} from '../prismic'
 import {RichText} from 'prismic-reactjs'
@@ -16,6 +17,11 @@ export async function getStaticProps() {
 function ChiSono({data}) {
   
   return (
+    <>
+      <Head>
+      <title>{data.metatitle}</title>
+        <meta name="description" content={`${data.metadescription}`} />
+      </Head>
     <div className="about-wrapper" data-scroll-section>
       <div className="about-wrapper-image" data-scroll>
         <img src={data.image.url} />
@@ -24,6 +30,7 @@ function ChiSono({data}) {
         <RichText render={data.testo} />
       </div>
     </div>
+    </>
   );
 }
 

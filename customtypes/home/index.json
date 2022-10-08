@@ -14,6 +14,21 @@
         }
       }
     },
-    "SEO": {}
+    "SEO": {
+      "metatitle": {
+        "type": "Text",
+        "config": {
+          "label": "metatitle",
+          "placeholder": ""
+        }
+      },
+      "metadescription": {
+        "type": "Text",
+        "config": {
+          "label": "metadescription",
+          "placeholder": ""
+        }
+      }
+    }
   }
 }

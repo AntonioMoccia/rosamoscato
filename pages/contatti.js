@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React ,{useEffect}from 'react'
 import {AiOutlinePhone,AiOutlineMail,AiOutlinePushpin} from 'react-icons/ai'
 import {client} from '../prismic'
@@ -16,6 +17,11 @@ export async function getStaticProps() {
 function Contatti({data}) {
 
     return (
+        <>
+              <Head>
+      <title>{data.metatitle}</title>
+        <meta name="description" content={`${data.metadescription}`} />
+      </Head>
         <div className='contatti-wrapper' data-scroll-section>
             <div className='info-wrapper' >
                 <div className='telefono'>
@@ -32,6 +38,7 @@ function Contatti({data}) {
                     </div>
             </div>
         </div>
+        </>
     )
 }
 

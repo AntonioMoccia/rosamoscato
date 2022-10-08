@@ -3,6 +3,7 @@ import Navigation from "./Navigation";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useRouter } from "next/router";
 import Footer from "./Footer";
+import Whatsapp from './Whatsapp'
 
 function Layout({ children }) {
   const containerRef = useRef(null);
@@ -41,6 +42,8 @@ function Layout({ children }) {
           <Footer />
         </main>
       </LocomotiveScrollProvider>
+          <Whatsapp />
+
     </>
   );
 }
