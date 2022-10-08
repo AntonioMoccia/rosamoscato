@@ -16,7 +16,9 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "contact": {},
+    "social": {}
   },
   "slices": {
     "Gallery": {}

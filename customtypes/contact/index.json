@@ -1,0 +1,31 @@
+{
+  "id": "contact",
+  "label": "Contact",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "phone": {
+        "type": "Text",
+        "config": {
+          "label": "phone",
+          "placeholder": ""
+        }
+      },
+      "email": {
+        "type": "Text",
+        "config": {
+          "label": "email",
+          "placeholder": ""
+        }
+      },
+      "address": {
+        "type": "Text",
+        "config": {
+          "label": "address",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

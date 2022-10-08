@@ -16,9 +16,6 @@ export async function getStaticProps() {
 
 function Servizi({data}) {
 
-    useEffect(()=>{
-        console.log(data);
-    },[data])
 
     return (
         <div className="servizi-wrapper">

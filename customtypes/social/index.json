@@ -1,0 +1,24 @@
+{
+  "id": "social",
+  "label": "social",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "instagram": {
+        "type": "Text",
+        "config": {
+          "label": "instagram",
+          "placeholder": ""
+        }
+      },
+      "facebook": {
+        "type": "Text",
+        "config": {
+          "label": "facebook",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}
