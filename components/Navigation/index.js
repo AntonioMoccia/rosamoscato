@@ -5,10 +5,11 @@ import Burger from "./Burger";
 import gsap from "gsap";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
+import {useRouter} from 'next/router'
 function Navigation() {
   const [open, setOpen] = useState(false);
   const { scroll, isReady } = useLocomotiveScroll();
-
+  const {asPath} = useRouter()
   useEffect(() => {
     const Items = document.querySelectorAll(".navigation-item");
     Items.forEach((item) => {
@@ -17,14 +18,25 @@ function Navigation() {
       });
     });
   }, []);
+  useEffect(()=>{ 
+      if(typeof window == 'undefined') return
 
+    if(window.innerWidth<=620){
+    if(asPath=='/'){
+      document.querySelector('.navigation-wrapper').style.background='rgba(255,255,255,0.5)'
+    }else{
+      document.querySelector('.navigation-wrapper').style.background='rgb(210, 210, 206)'
+    }
+   }
+  },[asPath])
   useEffect(() => {
     if (typeof window !== "undefined") 
 
     if (window.innerWidth <= 620) {
       document
-        .querySelector(".navigation-wrapper")
-        .removeAttribute("data-scroll-section");
+      .querySelector(".navigation-wrapper")
+      .removeAttribute("data-scroll-section");
+
     } else {
       document
         .querySelector(".navigation-wrapper")
@@ -92,7 +104,7 @@ function Navigation() {
         }}
       >
         <Link href="/">
-          <img src={"/logo.png"} className="logo" />
+          <img src={"/Logobianco.png"} className="logo" />
         </Link>
       </div>
       <div className="navigation-container">
