@@ -21,7 +21,8 @@ function Home({ data }) {
       </Head>
       <div className="home-wrapper">
         <div className="video-wrapper" data-scroll-section>
-          <video
+    
+          {/* <video
             id="video-hero-id"
             className="video-hero"
             autoPlay
@@ -31,7 +32,7 @@ function Home({ data }) {
             playsInline
           >
             <source src={data.video.url} />
-          </video>
+          </video> */}
         </div>
       </div>
     </>
