@@ -12,13 +12,13 @@ function Layout({ children }) {
     <>
       <LocomotiveScrollProvider
         options={{
-          smooth: true,
+          smooth: false,
           lerp: 0.07,
           multiplier: 1,
           touchMultiplier:4,
           reloadOnContextChange: true,
-          tablet: { smooth: true },
-          smartphone: { smooth: true },
+          tablet: { smooth: false },
+          smartphone: { smooth: false },
         }}
         watch={["router.asPath"]}
         location={asPath}

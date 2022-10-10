@@ -5,7 +5,7 @@ import {client} from '../../prismic'
 
 function Footer() {
   return (
-    <div className="footer" data-scroll-section>
+    <div className="footer">
       <div className="social-wrapper">
         <div className="social">
           <a target='_blank' href='https://www.facebook.com/rosamoscatoevents'>

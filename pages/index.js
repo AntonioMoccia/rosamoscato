@@ -19,9 +19,9 @@ function Home({ data }) {
         <title>{data.metatitle}</title>
         <meta name="description" content={`${data.metadescription}`} />
       </Head>
-      <div className="home-wrapper">
+      <div className="home-wrapper" >
         <div className="video-wrapper" data-scroll-section>
-    
+
           {/* <video
             id="video-hero-id"
             className="video-hero"
