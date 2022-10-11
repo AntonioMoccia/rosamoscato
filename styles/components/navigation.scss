@@ -50,7 +50,7 @@
       align-items: center;
       width: 100%;
       justify-content: center;
-      padding: 20% 0;
+    padding-top: 10vh;
     }
     .navigation-item {
       text-transform: uppercase;
@@ -107,13 +107,12 @@
     display: none;
     @media screen and (max-width:620px) {
       display: inline;
-
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-around;
-      min-height: 10vh;
-      margin-bottom: 15%;
+      height: 12vh;
+      margin-bottom: 30%;
       padding:0 10%;
       a{
         color: black;

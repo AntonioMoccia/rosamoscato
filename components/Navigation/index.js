@@ -71,13 +71,13 @@ function Navigation() {
           .to(".navigation-item > a", {
             y: 0,
             stagger: 0.09,
-          }).fromTo('.social',{
+          }).fromTo('.social-wrapper-menu > .social',{
             opacity:0
           },{
             opacity:1
           },"-=0.8")
       } else {
-        tl.fromTo('.social',{
+        tl.fromTo('.social-wrapper-menu > .social',{
           opacity:1
         },{
           opacity:0
