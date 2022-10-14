@@ -103,6 +103,9 @@
       transform: rotateZ(-40deg);
       z-index: 3;
       background-color: transparent;
+      svg{
+        background-color: transparent;
+      }
     }
   }
   .social-wrapper-menu{
