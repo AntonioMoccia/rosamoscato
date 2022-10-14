@@ -14,6 +14,24 @@ export async function getStaticProps() {
 }
 
 function Servizi({ data }) {
+
+/* useEffect(()=>{
+  if(typeof window == 'undefined') return
+  
+  let options = {
+    root: document.querySelector('.descrizione-servizi-wrapper'),
+    rootMargin: '0px',
+    threshold: 1.0
+  }
+  const callback = (entries, observer)=>{
+    console.log(entries);
+  }
+  let observer = new IntersectionObserver(callback, options);
+
+  observer.observe(document.querySelector('img'))
+
+}) */
+
   return (
     <>
       <Head>
