@@ -24,9 +24,9 @@ function Servizi({ data }) {
         <div className="descrizione-servizi-wrapper" data-scroll-section>
           <RichText render={data.descrizione_servizi} />
         </div>
-        <div className="gallery-servizi-wrapper" data-scroll-section>
+       {/*  <div className="gallery-servizi-wrapper" data-scroll-section>
           <Slider images={data.gallery_servizi} />
-        </div>
+        </div> */}
       </div>
     </>
   );
