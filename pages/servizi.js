@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { client } from "../prismic";
 import { RichText } from "prismic-reactjs";
 import Slider from "../components/Slider";
+import gsap from 'gsap';
 export async function getStaticProps() {
   const data = await client.getByType("servizi");
 
@@ -15,22 +16,28 @@ export async function getStaticProps() {
 
 function Servizi({ data }) {
 
-/* useEffect(()=>{
+useEffect(()=>{
   if(typeof window == 'undefined') return
   
-  let options = {
-    root: document.querySelector('.descrizione-servizi-wrapper'),
-    rootMargin: '0px',
-    threshold: 1.0
-  }
+
   const callback = (entries, observer)=>{
-    console.log(entries);
+    
+      console.log(entries,observer);
+    gsap.to(entries[0].target,{
+      scaleY: 1,
+      duration:1,
+    })
   }
-  let observer = new IntersectionObserver(callback, options);
+  let observer = new IntersectionObserver(callback, {
+    threshold:0.05
+  });
 
-  observer.observe(document.querySelector('img'))
+  document.querySelectorAll('.block-img ').forEach((image)=>{
+    observer.observe(image)
+  })
 
-}) */
+ 
+})
 
   return (
     <>
