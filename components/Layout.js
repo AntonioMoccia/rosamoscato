@@ -4,6 +4,7 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useRouter } from "next/router";
 import Footer from "./Footer";
 import Whatsapp from './Whatsapp'
+import Badge from "./Badge";
 
 function Layout({ children }) {
   const containerRef = useRef(null);
@@ -43,6 +44,7 @@ function Layout({ children }) {
         </main>
       </LocomotiveScrollProvider>
           <Whatsapp />
+          <Badge />
 
     </>
   );
